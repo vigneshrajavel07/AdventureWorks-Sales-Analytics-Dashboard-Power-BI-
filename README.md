@@ -109,7 +109,7 @@ Returns
 **👨‍💻 Author**
 Vignesh R
 Entry-Level Data Analyst / Power BI Developer
-Skills: Power BI, SQL, Excel, DAX, Data Modeling
+Skills: Power BI, SQL, Excel, DAX, Data Modeling,
 ✔ Professional UI Theme
 ✔ Performance KPIs
 ✔ Star Schema Data Model
