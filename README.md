@@ -1,244 +1,184 @@
-📌 Project Overview
+# 📊 AdventureWorks Sales Analytics Dashboard (Power BI)
 
-This project is an end-to-end Power BI Business Intelligence dashboard developed using the AdventureWorks sales dataset.
-It provides executive-level insights into sales, profit, product performance, territory growth, and returns using advanced Power BI features.
+## 🔹 Project Overview
 
-The dashboard is designed with a business-focused layout and is suitable for portfolio showcase, interviews, and real-world enterprise analytics scenarios.
+This project is a **complete end-to-end Business Intelligence solution** built using **Microsoft Power BI** on the AdventureWorks sales dataset.
 
-🎯 Project Objectives
+The dashboard provides **executive-level insights** into:
 
-Analyze overall sales, profit, and business performance
+* Revenue, Profit & Orders
+* Product performance & profitability
+* Territory-wise performance
+* Return analysis & quality issues
+* Detailed product drill-down analysis
 
-Identify top & underperforming products
+It is designed using **industry-level UI/UX**, **DAX measures**, **data modeling**, **dynamic titles**, **tooltips**, and **navigation buttons**.
 
-Compare territory and country-level performance
+---
 
-Track YoY growth, YTD performance, and trends
+## 🧠 Business Problem
 
-Analyze returns and revenue leakage
+Management wants to:
 
-Build a professional, interactive executive dashboard
+* Track overall business performance
+* Identify top & poor performing products
+* Analyze territory-wise growth
+* Understand return reasons & revenue leakage
+* Enable drill-down from summary → detail
 
-📊 Dashboard Pages
-🔹 Executive Summary
+---
 
-KPI Cards:
+## 🛠 Tools & Technologies
 
-Total Revenue
+* Power BI Desktop
+* Power Query (ETL)
+* DAX (Data Analysis Expressions)
+* Data Modeling (Star Schema)
+* Excel / CSV Data Sources
 
-Total Orders
+---
 
-Total Units Sold
+## 🗂 Data Model
 
-Profit
+* Fact Tables:
 
-Monthly Revenue Trend
+  * Fact_Sales
+  * Fact_Returns
+* Dimension Tables:
 
-Revenue by Category
+  * Dim_Date
+  * Dim_Product
+  * Dim_Customer
+  * Dim_Territory
+  * Dim_Category / Subcategory
 
-Slicers:
+✔ Star schema
+✔ Proper relationships
+✔ Date table marked
 
-Year
+---
 
-Region
+## 📐 Key DAX Measures
 
-Continent
+* Total Revenue
+* Total Orders
+* Total Units Sold
+* Total Cost
+* Profit
+* Profit Margin %
+* Total Returns
+* Return Rate %
+* Revenue PY (Previous Year)
+* Revenue YoY %
+* YTD / MTD Measures
 
-Dynamic Page Title
+---
 
-Navigation Buttons
+## 📄 Report Pages
 
-🔹 Product Analysis
+### 1️⃣ Executive Summary
 
-KPI Cards:
+* KPI Cards:
 
-Total Products
+  * Total Revenue
+  * Total Orders
+  * Profit
+  * Units Sold
+* Monthly Revenue Trend
+* Revenue by Category
+* Dynamic slicers (Year, Region, Continent)
+* Dynamic page title
 
-Total Orders
+---
 
-Total Cost
+### 2️⃣ Product Analysis
 
-Total Revenue
+* Total Products, Orders, Cost, Revenue, Profit
+* Category-wise performance table
+* Product profitability (Profit vs Revenue)
+* Top categories by revenue
+* Slicers for Year & Category
 
-Profit
+---
 
-Category-wise performance table:
+### 3️⃣ Territory Performance
 
-Units Sold
+* KPI: Revenue Performance vs Target
+* Territory-wise revenue table with YoY growth
+* Countries by revenue bar chart
+* Map visual with tooltip details
+* Dynamic tooltip page
 
-Revenue
+---
 
-Returns
+### 4️⃣ Return Analysis
 
-Return Rate %
+* KPIs:
 
-Revenue by Category (with drill-down to subcategory)
+  * Total Returns
+  * Return Rate %
+  * Total Revenue
+* Returns by month trend
+* Returns by category
+* Return rate by category
+* Identifies quality & loss areas
 
-Product Profitability (Profit vs Revenue Scatter Plot)
+---
 
-Slicers:
+### 5️⃣ Product Detail (Drilldown Page)
 
-Year
+* Category Detail
+* Subcategory Detail
+* Product-level detail table
+* Full drill-down analysis
 
-Category
+---
 
-🔹 Territory Performance
+### 6️⃣ Tooltip Page
 
-KPI:
+* Custom tooltip with:
 
-Revenue Performance vs Last Year (Speedometer / Gauge)
+  * Revenue
+  * Orders
+  * Profit
+  * Margin
+  * YoY Growth
+  * Returns
 
-Table:
+---
 
-Region
+## 🎨 Advanced Features Implemented
 
-Total Revenue
+✔ Dynamic Page Titles using DAX
+✔ Page Navigation Buttons (App-like experience)
+✔ Custom Tooltip Page
+✔ Drill-down & Drill-through
+✔ Conditional Formatting
+✔ Professional UI Theme
+✔ Performance KPIs
+✔ Star Schema Data Model
 
-Revenue PY
+---
 
-Revenue YoY %
 
-Bar Chart:
 
-Top Countries by Revenue
+## 🚀 How to Use
 
-Map Visual:
+1. Download the `.pbix` file
+2. Open in Power BI Desktop
+3. Refresh data if needed
+4. Explore pages using navigation buttons
 
-Territory-wise Revenue & Returns
+---
 
-Custom Tooltip Page for Territory-level Details
+## 👨‍💻 Author
 
-Slicers:
+**Vignesh R**
+Entry-Level Data Analyst / Power BI Developer
+Skills: Power BI, SQL, Excel, DAX, Data Modeling
 
-Year
 
-Region
 
-Continent
 
-🔹 Return Analysis
 
-KPI Cards:
 
-Total Revenue
-
-Total Returns
-
-Return Rate %
-
-Monthly Returns Trend
-
-Returns by Category
-
-Return Rate % by Category
-
-Helps identify quality issues & revenue leakage
-
-🔹 Product Detail (Drill-through)
-
-Drill-through enabled page showing:
-
-Category-level detail
-
-Subcategory-level detail
-
-Product-level detail
-
-Metrics:
-
-Orders
-
-Units Sold
-
-Cost
-
-Revenue
-
-Profit
-
-Profit Margin
-
-YoY Performance
-
-🔹 KPI Tooltip Page
-
-Custom tooltip page displaying:
-
-Revenue
-
-Orders
-
-Returns
-
-Profit
-
-Profit Margin %
-
-Revenue PY
-
-Revenue YTD
-
-Revenue YoY %
-
-(High-impact “wow factor” feature)
-
-🛠️ Tools & Technologies
-
-Power BI Desktop
-
-Power Query – Data cleaning & transformation
-
-DAX – Measures, KPIs, Time Intelligence
-
-Data Modeling (Star Schema)
-
-Interactive Visual Design
-
-⭐ Key Features
-
-Star schema data model
-
-Dynamic slicers and filters
-
-YoY, YTD, MTD time intelligence
-
-Profitability analysis
-
-Drill-down & Drill-through navigation
-
-Custom tooltip pages
-
-Dynamic page titles using DAX
-
-Navigation buttons (App-like experience)
-
-Professional executive UI design
-
-📌 Skills Demonstrated
-
-Data Analysis & Business Intelligence
-
-Power BI Dashboard Development
-
-Data Modeling (Star Schema)
-
-Advanced DAX (YoY, YTD, Profit, Margin, Return Rate)
-
-Business storytelling with dashboards
-
-Executive KPI design
-
-Interview-ready project presentation
-
-📁 Repository Contents
-
-AdventureWorks_Business_Performance.pbix – Power BI report
-
-AdventureWorks_Data_Files – CSV / Excel source files
-
-screenshots/ – Dashboard preview images
-
-👤 Author
-
-Vignesh R
-Power BI Developer | Data Analyst
